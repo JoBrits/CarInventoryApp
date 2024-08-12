@@ -1,9 +1,9 @@
 // IMPORTS
 const express = require("express");
-const path = require('path');
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
+const path = require('path');
 
 // CORS
 const cors = require("cors");
@@ -50,7 +50,7 @@ const connectToDB = async () => {
 
 connectToDB();
 
-const port = 3003;
-app.listen(port, () => {
+const PORT = 3003;
+app.listen(PORT, () => {
   console.log("Server started successfully");
 });
